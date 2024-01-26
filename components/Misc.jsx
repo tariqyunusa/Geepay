@@ -32,11 +32,13 @@ const Misc = () => {
   return (
     <div className='top'>
        <Chart />
+       <div className="grid_container">
        <div className="left_side">
         <SideComp pack={delivered} line={line} info={info} amount={amount} bottom={bottom} />
         <SideComp pack={box} line={line2} info={info2} amount={amount2} bottom={bottom2} />
         <SideComp pack={cart} line={line3} info={info3} amount={amount3} bottom={bottom3} />
         <SideComp pack={currency} line={line4} info={info4} amount={amount4} bottom={bottom4} />
+       </div>
        </div>
        
     </div>

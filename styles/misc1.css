@@ -4,18 +4,28 @@
     box-sizing: border-box;
 }
 .top{
-    width: 86rem;
+    width: 95vw;
     height: 22rem;
     position: absolute;
     display: flex;
     top: 85px;
-    left: 100px;
+    left: 80px;
     gap: 1rem;
+    padding-inline: 1rem;
 
 }
 .left_side{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    width: 40%;
+    width: 100%;
+    padding-bottom: 1rem;
+    /* padding-right: 1rem; */
+    /* padding-inline: 1rem; */
+}
+.grid_container{
+    width: 38%;
+    display: flex;
+    /* margin-right: 1rem; */
+
 }

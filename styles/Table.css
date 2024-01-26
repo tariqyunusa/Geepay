@@ -5,15 +5,17 @@
     box-sizing: border-box;
 }
 .table_section{
-    width: 784px;
-    height: 285px;
+    width: 61.2%;
+    /* height: 285px; */
     background-color: #fff;
     border: 1px solid #EDF2F7;
     border-radius: 14px;
     padding: 1rem;
+    padding-inline: 1rem;
 }
 .table__header{
-    width: 100%;
+    width: 99%;
+    padding: .4rem 0 .4rem 0;
     height: 10%;
     display: flex;
     justify-content: space-between;

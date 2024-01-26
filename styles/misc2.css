@@ -6,11 +6,13 @@
 }
 .bottom{
     position: absolute;
-    width: 91vw;
+    width: 94vw;
     margin: .3rem;
-    top: 468px;
-    left: 6rem;
+    top: 430px;
+    left: 5rem;
     display: flex;
     gap: 1rem;
+    padding: 1rem;
+
     
 }

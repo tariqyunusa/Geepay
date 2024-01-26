@@ -8,7 +8,7 @@
     position: absolute;
     top: 0;
     left: 5rem;
-    width: 100%;
+    width: 95vw;
     height: 4.5rem;
     /* background-color: #FAFAFA; */
     border: 1px solid #EBECF2;
@@ -29,15 +29,17 @@
     font-weight: 600;
 }
 .right__container_header{
-    width: 40%;
+    width: 36%;
     height: 100%;
     display: flex;
     align-items: center;
     gap: 4rem;
+    margin-inline: 1rem;
 }
 .date{
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 .date_p{
     font-family:Plus Jakarta Sans ;

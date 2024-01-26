@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 .sales_trends{
-    width: 765px;
-    height: 310px;
+    width: 95%;
+    height: 80%;
     margin-left: 1rem;  
 }
 .sales_header{
@@ -28,8 +28,8 @@
     align-items: center;
 }
 .sales_bg{
-    width: 806px;
-    height: 374px;
+    width: 60%;
+    /* height: 374px; */
     background-color: #fff;
     border-radius: 14px;
     border: 1px solid #EDF2F7;
