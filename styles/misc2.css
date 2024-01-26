@@ -1,0 +1,14 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bottom{
+    position: absolute;
+    width: 91vw;
+    margin: .3rem;
+    top: 468px;
+    left: 6rem;
+    
+}

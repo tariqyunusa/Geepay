@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header_container{
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    width: 100%;
+    height: 4.5rem;
+    /* background-color: #FAFAFA; */
+    border: 1px solid #EBECF2;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+.left__conatiner_header{
+   width: 60%;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   /* padding-inline: 1rem; */
+   align-items: center;
+}
+.Dash_header{
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+}
+.right__container_header{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.date{
+    display: flex;
+    gap: 1rem;
+}
+.date_p{
+    font-family:Plus Jakarta Sans ;
+    font-weight: 500;
+}
+.notif_user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #DADDDD;
+    border-radius: 28px;
+    padding: .5rem;
+    font-family: Plus Jakarta Sans;
+}
