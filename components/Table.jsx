@@ -1,8 +1,9 @@
-import React from 'react'
-import "../styles/Table.css"
-import Link from 'next/link'
-import Image from 'next/image'
-import download from "../public/download.png"
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import download from '../public/download.png';
+import "../styles/Table.css";
+
 const Table = () => {
     const data = [
         {
@@ -45,40 +46,56 @@ const Table = () => {
             Status: "Paid",
             invoice: "view"
         },
-    ]
-  return (
-    <div className='table_section'>
-        <header className="table__header">
-            <h4 className="header">Last Orders</h4>
-            <Link href="#" className='header_link'>See All</Link>
-        </header>
-        <table className='table'>
-            <thead className='table_head'>
-                <tr className='t-row'>
-                    <th>Name</th>
-                    <th>Date</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                    <th>Invoice</th>
+    ];
 
-                </tr>
-            </thead>
-            <tbody>
-                {data.map((item, index) => (
-                    <tr key={index}>
-                        <td className='table_data data_1'><Image src={item.img} width={20} height={20} alt={item.name}/><p>{item.name}</p></td>
-                        <td className='table_data'>{item.date}</td>
-                        <td className='table_data'>{item.Amount}</td>
-                        <td className='table_data'>{item.Status}</td>
-                        <td className='table_data data_last'><Image src={download} width={15} height={15} alt='icon'/><p>view</p></td>
+    const getStatusColor = (status) => {
+        if (status === "Paid") {
+            return "paid"; // Hex color code for Paid
+        } else if (status === "Refund") {
+            return "refund"; // Hex color code for Refund
+        } else {
+            return ""; // default color or no color
+        }
+    };
+
+    return (
+        <div className='table_section'>
+            <header className="table__header">
+                <h4 className="header">Last Orders</h4>
+                <Link href="#" className='header_link'>See All</Link>
+            </header>
+            <table className='table'>
+                <thead className='table_head'>
+                    <tr className='t-row'>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Invoice</th>
                     </tr>
-                    
-                ))}
-            </tbody>
-        </table>
-      
-    </div>
-  )
-}
+                </thead>
+                <tbody>
+                    {data.map((item, index) => (
+                        <tr key={index}>
+                            <td className='table_data data_1'>
+                                <Image src={item.img} width={20} height={20} alt={item.name}/>
+                                <p>{item.name}</p>
+                            </td>
+                            <td className='table_data'>{item.date}</td>
+                            <td className='table_data'>{item.Amount}</td>
+                            <td className={`table_data status ${getStatusColor(item.Status)}`}>
+                                {item.Status}
+                            </td>
+                            <td className='table_data data_last'>
+                                <Image src={download} width={15} height={15} alt='icon'/>
+                                <p>view</p>
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
+    );
+};
 
-export default Table
+export default Table;

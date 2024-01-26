@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.platform_container{
+    width: 660px;
+    background-color: #fff;
+    border: 1px solid #EDF2F7;
+    border-radius: 14px;
+    padding: 1rem;
+}
+.platform_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   height: 10%;
+   line-height: 12px;
+    font-family:Plus Jakarta Sans ;
+    margin-bottom: .5rem;
+}
+.link_platform{
+    text-decoration: none;
+    color: #34CAA5;
+}
+.platform_body{
+    width: 100%;
+    height: 90%;
+    font-family: Plus Jakarta Sans;
+}
+.platform{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    margin-bottom: .8rem;
+}
+.platform_bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.bar{
+    position: relative;
+    width: 100%;
+    background-color: #F5F5F5;
+    height: 8px;
+    border-radius: 14px;
+}
+.filler2{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    border-radius: 14px;
+    top: 0;
+    left: 0;
+    background-color: #6160DC;
+}
+.filler3{
+    background-color: #54C5EB;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    border-radius: 14px;
+    top: 0;
+    left: 0;
+}
+.filler4{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    border-radius: 14px;
+    top: 0;
+    left: 0;
+    background-color: #FFB74A;
+}

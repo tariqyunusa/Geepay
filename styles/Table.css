@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .table_section{
-    width: 54%;
+    width: 784px;
     height: 285px;
     background-color: #fff;
     border: 1px solid #EDF2F7;
@@ -27,10 +27,13 @@
     text-decoration: none;
     font-weight: 500;
     color: #34CAA5;
+    
 
 }
 .data_1{
     display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 .table{
     width: 100%;
@@ -41,9 +44,18 @@
    border-bottom: 1px solid #EDF2F6;
   
 }
+.status.paid {
+    color: #34CAA5;
+}
+
+.status.refund {
+    color: #ED544E;
+}
 
 .data_last{
     display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 th{
     color: #9CA4AB;
@@ -54,15 +66,5 @@ th{
     padding: 0 0 .7rem 0;
 }
 td{
- padding:.35rem 0 .35rem 0 ;  
-}
-tr {
-    border-bottom: 1px solid #ddd; /* Add a bottom border to each row */
-}
- 
-td {
-    padding: 8px; /* Add padding to create some space within cells */
-}
-tr:last-child {
-    border-bottom: none;
+ padding:.45rem 0 .45rem 0 ;  
 }
