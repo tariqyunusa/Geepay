@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .top{
-    width: 92rem;
+    width: 86rem;
     height: 22rem;
     position: absolute;
     display: flex;
@@ -17,4 +17,5 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    width: 40%;
 }
