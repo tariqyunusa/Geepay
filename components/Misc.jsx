@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from 'react'
-import Chart from "@/components/chart";
+import Chart from "@/components/Chart";
 import "../styles/misc1.css"
-import SideComp from './sideComp';
+import SideComp from './SideComp';
 import delivered from "../public/delivered.png"
 import box from "../public/box.png"
 import cart from "../public/cart.png"

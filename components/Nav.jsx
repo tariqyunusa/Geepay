@@ -13,7 +13,7 @@ import Warning from "../public/warning.png"
 import Light from "../public/Light.png"
 import Moon from "../public/moon.png"
 import Forward from "../public/Arrow-forward.png"
-import Settings from "../public/Settings2.png"
+import Settings from "../public/settings2.png"
 import Logout from "../public/logout2.png"
 import Move from "../public/move.png"
 

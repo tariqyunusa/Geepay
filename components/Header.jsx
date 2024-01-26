@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Calender from "../public/calender.png"
 import Bell from "../public/bell.png"
 import img from "../public/photo.png"
-import chevron from "../public/arrow2.png"
+import chevron from "../public/Arrow2.png"
 
 const Header = () => {
     const date = new Date("2024-01-27")
